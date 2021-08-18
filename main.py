@@ -133,3 +133,8 @@ plt.show()
 img = test_images[1]
 
 print(img.shape)
+
+# Add the image to a batch where it's the only member.
+img = (np.expand_dims(img,0))
+
+print(img.shape)
