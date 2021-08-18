@@ -138,3 +138,7 @@ print(img.shape)
 img = (np.expand_dims(img,0))
 
 print(img.shape)
+
+predictions_single = probability_model.predict(img)
+
+print(predictions_single)
