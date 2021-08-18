@@ -128,3 +128,8 @@ for i in range(num_images):
   plot_value_array(i, predictions[i], test_labels)
 plt.tight_layout()
 plt.show()
+
+# Grab an image from the test dataset.
+img = test_images[1]
+
+print(img.shape)
