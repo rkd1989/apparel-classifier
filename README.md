@@ -1,84 +1,52 @@
-# Apparel Classifier
+# Apparel Classifier (Minimal Prototype)
 
-This repository contains a machine learning project that classifies apparel images into predefined categories using deep learning. It’s designed for experimenting with image classification using popular frameworks like TensorFlow or PyTorch.
+This repository contains a simple proof-of-concept script for classifying apparel using a deep learning model. The project demonstrates how to load a pre-trained image classification model and run inference on a single input image.
 
-## 👕 Use Case
+## 🧠 What It Does
 
-Automatically identify the type of clothing (e.g., T-shirt, dress, shoes, etc.) from images. Useful for:
-
-- Fashion tech demos
-- E-commerce automation
-- Image tagging systems
-- ML portfolio projects
-
-## 🚀 Features
-
-- 🖼 Preprocessing and normalization of image data
-- 🧠 Deep learning-based model (CNN)
-- 📊 Accuracy tracking and evaluation
-- 📁 Organized structure for training and inference
-- 🧪 Easily extendable for new categories or datasets
-
-## 🧰 Tech Stack
-
-- Python 3.x
-- TensorFlow or PyTorch
-- NumPy, Pandas
-- Matplotlib (for visualization)
-- Jupyter Notebook (for experimentation)
+- Loads a trained image classification model (e.g., TensorFlow `.h5` or PyTorch `.pth`)
+- Accepts a single image input
+- Outputs the predicted apparel class
 
 ## 📁 Folder Structure
 
 ```
 .
-├── data/                  # Raw and processed images
-├── models/                # Trained models
-├── notebooks/             # Jupyter notebooks for exploration
-├── src/
-│   ├── train.py           # Training script
-│   ├── predict.py         # Prediction script
-│   └── utils.py           # Helper functions
-├── requirements.txt
-└── README.md
+├── main.py                # Entry point for loading the model and making predictions
+└── README.md              # Project documentation
 ```
 
 ## ⚙️ Getting Started
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/rkd1989/apparel-classifier.git
-   cd apparel-classifier
+   git clone https://github.com/rkd1989/classifyApparel.git
+   cd classifyApparel
    ```
 
-2. **Set up a virtual environment and install dependencies**
+2. **Install required packages**
+   *(Ensure you have Python and pip installed)*
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # or venv\Scripts\activate on Windows
-   pip install -r requirements.txt
+   pip install -r requirements.txt  # If you create one
    ```
 
-3. **Run training**
+3. **Run the script**
    ```bash
-   python src/train.py
+   python main.py
    ```
 
-4. **Make predictions**
-   ```bash
-   python src/predict.py --image path_to_image.jpg
-   ```
+> Modify the script to load your custom model and adjust preprocessing to fit your dataset.
 
-## 🧪 Sample Categories
+## ✅ Use Cases
 
-- T-shirt
-- Shirt
-- Dress
-- Pants
-- Shoes
-- Accessories
+- Initial ML prototype for fashion or e-commerce projects
+- Educational or experimental script to test image classification workflows
 
-## 🤝 Contribute
+## 🚀 Future Improvements
 
-Feel free to fork this project and add new features, improve the model, or optimize performance.
+- Support for batch prediction
+- Web interface using Streamlit or Flask
+- Integration with a dataset and training script
 
 ## 📄 License
 
