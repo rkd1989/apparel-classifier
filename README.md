@@ -20,8 +20,8 @@ This repository contains a simple proof-of-concept script for classifying appare
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/rkd1989/classifyApparel.git
-   cd classifyApparel
+   git clone https://github.com/rkd1989/apparel-classifier.git
+   cd apparel-classifier
    ```
 
 2. **Install required packages**
